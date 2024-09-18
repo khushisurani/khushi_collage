@@ -1,0 +1,67 @@
+/* Userlist.css */
+
+/* General styles for all screen sizes */
+.pro {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.userlist {
+  flex: 1;
+  padding: 0 20px;
+  color: white;
+}
+
+.userlist .row {
+  margin: 0;
+}
+
+.userlist .col-md-6 {
+  margin-top: 0vh;
+}
+
+.profileset {
+  flex: 0 0 auto;
+  cursor: pointer;
+  margin-left: 50vh; /* This may need to be adjusted for mobile */
+}
+
+.profileset img {
+  height: 30vh;
+  width: 30vh;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+
+.profileset input {
+  display: none;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+  .pro {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    margin-top: 5vh; /* Adjusted margin for mobile */
+  }
+
+  .userlist {
+    padding: 0 10px; /* Reduced padding for mobile */
+    margin-top: 5vh;
+    margin-left: -40%;
+  }
+
+  .profileset {
+    margin-left: 0; /* Remove left margin for mobile */
+    margin-top: 20px; /* Add top margin for better spacing */
+  }
+
+  .profileset img {
+    height: 20vh; /* Smaller image size for mobile */
+    width: 20vh;
+    margin-left: -40%;
+  }
+}
